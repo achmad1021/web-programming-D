@@ -1,0 +1,94 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.outer-wrap{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.inner-wrap{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 3840px;
+}
+
+section.header{
+    position: relative;
+    width: 100%;
+    /* top: 0; */
+    padding: 1rem;
+    background-color: rgba(66, 66, 66, 0.452);
+    /* filter: blur(8px); */
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+section.header > img{
+    display: none;
+    width: 6rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+}
+section.header > h3{
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Dancing Script', arial, serif; 
+    /* border: 1px solid black; */
+    border-radius: 3rem;
+}
+section.header > .nav-menus{
+    width: 100%;
+    /* border: 2px solid green; */
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav-menus>ul{
+    /* display: flex; */
+    /* width: 100%; */
+    /* border: 2px solid blue; */
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menus>ul li{
+    font-size: 1.4rem;
+    font-weight: 700;
+    /* border: 2px solid red; */
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background-color, color, border-radius;
+}
+
+.nav-menus>ul li:not(:last-child){
+    margin-right: 2rem;
+}
+.nav-menus>ul li:hover{
+    background-color: black;
+    color: white;
+    border-radius: 1.3rem;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.918);
+    padding: 0.4rem;
+    color: #616161;
+}
+
+

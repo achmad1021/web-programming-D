@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hometown</title>
+    <link rel="stylesheet" href="../css/homeStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+<div class="outer-wrap">
+<div class="inner-wrap">
+    <section class="header">
+        <img src="https://awsimages.detik.net.id/community/media/visual/2022/03/15/kenapa-logo-halal-diganti-ada-perpindahan-wewenang-dari-mui-ke-kemenag.jpeg?w=1200" alt="">
+        <h3>Rudy's Page</h3>
+        <div class="nav-menus">
+            <ul>
+                <li><a href="../index.html#content">
+                    home</a>
+                </li>
+                <li><a href="../profile#content">
+                    profile</a>
+                </li>
+                <li><a href="../hometown#content">
+                    hometown</a>
+                </li>
+                <li><a href="../food#content">
+                    food</a>
+                </li>
+                <li><a href="../tourist#content">
+                    tourist</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- tempatnya konten  -->
+<section class="content" id="content">
+
+<style>
+    section.content{
+    background-color: #3f3f3f;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    padding: 15vh 5% 15vh 5%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-image: url(https://www.goodnewsfromindonesia.id/uploads/post/large-goodnewsfromindonesia-gnfi-kayangan-api-bojonegoro-c4b4272a40d1d7a943469729b562ca43.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    /* border: 5px solid green; */
+}
+        /* start with left content  */
+    section.content > .box{
+        width: 100%;
+        /* border: 2px solid green; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    section.content .box img{
+        object-fit: cover;
+        /* border: 5px solid rgb(0, 0, 0); */
+        /* padding: 5%; */
+        width: 78%;
+        aspect-ratio: 1/1;
+        /* height: */
+        border-radius: 50%;
+    }
+    section#content .background-filter{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #5e5a5a43;
+    }
+    section.content > .box p{
+        color: white;
+        /* height: 100%; */
+        overflow-y: hidden;
+        font-size: 1.3rem;
+        padding: 0 4rem;
+        text-align: justify;
+        letter-spacing: 0.3rem;
+    }
+    section.content > .box h2{
+        /* border: 2px solid red; */
+        width: 100%;
+        font-weight: 700;
+        font-size: 4rem;
+        color: #ffffff;
+        letter-spacing: 0.3rem;
+        padding: 3rem;
+        text-shadow: 2px 2px #000000;
+        text-transform: uppercase;
+        text-align: center;  
+    }
+    section.content > .box h3{
+        /* border: 2px solid red; */
+        width: 100%;
+        font-weight: 700;
+        font-size: 2rem;
+        color: #ffffff;
+        letter-spacing: 0.3rem;
+        padding: 2rem;
+        text-shadow: 2px 2px #000000;
+        text-transform: uppercase;
+        text-align: center;  
+    }
+</style>
+<!-- start div foodbox -->
+<!-- <div class="foodbox" style="width: 100% ;height: 100%"> -->
+<div class="background-filter">
+
+</div>
+<style>
+    section#content > a{
+    z-index: 999;
+    position: absolute;
+    padding: 2rem;
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.323);
+    transition: 0.3s linear;
+    transform:translateY(-50%);
+    transition-property: background;
+    }
+    section#content > a:hover{
+        color: white;
+        background-color: #00000085;
+    }
+</style>
+<a class="prev" onclick="plusSlides(-1)" style="left: 0;
+top: 50%;">❮</a>
+<a class="next" onclick="plusSlides(1)" style="right: 0;
+top: 50%;">❯</a>
+<!-- box ledre  -->
+<div class="box">
+    <h2>Bojonegoro</h2>
+    <h3>East Java, Indonesia</h3>
+    <a href="https://goo.gl/maps/Unp7VLnNst6iCFD57" target="_blank">
+        <style>
+            h4#mapss{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                font-weight: 700;
+                font-size: 1rem;
+                color: #ffffff;
+                letter-spacing: 0.3rem;
+                padding: 1rem;
+                background-color: rgba(255, 166, 0, 0.514);
+                text-shadow: 2px 2px #000000;
+                text-transform: uppercase;
+                text-align: center;
+                border-radius: 2rem;
+                transition: 0.5s linear;
+                transition-property: background;
+            }
+            h4#mapss:hover{
+                background-color: red;
+            }
+        </style>
+        <h4 id="mapss">
+            Click Here For Maps Location
+        </h4>
+    </a>
+    
+</div>
+<!-- box untuk putu -->
+<div class="box" >
+    <p style="padding: 10%;">Bojonegoro located in East Java. It is
+        <u>+</u> 110km away from Surabaya. Bojonegoro
+        are bordered with Tuban on north, Lamongan on east,
+        Madiun, Nganjuk, Jombang on south, also Ngawi on west.
+    </p>
+</div>
+<div class="box">
+    <a href="../food#content">
+        <style>
+            h4#tofood{
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: 700;
+                font-size: 1rem;
+                color: #ffffff;
+                letter-spacing: 0.3rem;
+                padding: 1rem;
+                background-color: rgba(255, 166, 0, 0.651);
+                text-shadow: 2px 2px #000000;
+                text-transform: uppercase;
+                text-align: center;
+                border-radius: 2rem;
+                transition: 0.8s linear;
+                transition-property: background;
+        
+            }
+            h4#tofood:hover{
+                background-color: orange;
+            }
+        </style>
+        <h4 id="tofood">
+            interested in food? click here
+        </h4>
+    </a>
+</div>
+    
+
+</section>
+    <!-- tempatnya footer  -->
+    <!-- <section class="footer"> -->
+        <style>
+            footer{
+                background-color: rgba(0, 0, 0, 0.918);
+                padding: 0.4rem;
+                color: #616161;
+            }
+        </style>
+        <footer>
+            <p>
+                this sites originally created by Achmad Nashruddin Riskynanda for Web Programming Quiz
+            </p>
+        </footer>
+    <!-- </section> -->
+</div>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("box");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "flex";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+</body>
+</html>

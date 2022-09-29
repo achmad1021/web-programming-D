@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="../css/homeStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+<div class="outer-wrap">
+<div class="inner-wrap">
+    <section class="header">
+        <img src="https://awsimages.detik.net.id/community/media/visual/2022/03/15/kenapa-logo-halal-diganti-ada-perpindahan-wewenang-dari-mui-ke-kemenag.jpeg?w=1200" alt="">
+        <h3>Rudy's Page</h3>
+        <div class="nav-menus">
+            <ul>
+                <li><a href="../index.html#content">
+                    home</a>
+                </li>
+                <li><a href="../profile#content">
+                    profile</a>
+                </li>
+                <li><a href="../hometown#content">
+                    hometown</a>
+                </li>
+                <li><a href="../food#content">
+                    food</a>
+                </li>
+                <li><a href="../tourist#content">
+                    tourist</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- tempatnya konten  -->
+<section class="content" id="content">
+
+<style>
+    section.content{
+    background-color: #3f3f3f;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    padding: 15vh 5% 15vh 5%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-image: url(../resources/food_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    /* border: 5px solid green; */
+}
+        /* start with left content  */
+    section.content > .box{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        
+    }
+
+    section.content .food-profile{
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section.content .box img{
+        object-fit: cover;
+        /* border: 5px solid rgb(0, 0, 0); */
+        /* padding: 5%; */
+        width: 78%;
+        aspect-ratio: 1/1;
+        /* height: */
+        border-radius: 50%;
+    }
+    section#content .background-filter{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #5e5a5a70;
+    }
+    section.content > .box p{
+        color: white;
+        /* height: 100%; */
+        overflow-y: hidden;
+        font-size: 1.3rem;
+        padding: 0 4rem;
+        text-align: justify;
+        letter-spacing: 0.3rem;
+    }
+    section.content > .box h2{
+        font-weight: 700;font-size: 4rem;color: #ffffff;
+        letter-spacing: 0.3rem; padding: 3rem;
+        text-shadow: 2px 2px #000000;
+        text-transform: uppercase;
+        
+    }
+</style>
+<!-- start div foodbox -->
+<!-- <div class="foodbox" style="width: 100% ;height: 100%"> -->
+<div class="background-filter">
+
+</div>
+<style>
+    section#content > a{
+        z-index: 999;
+    position: absolute;
+    padding: 2rem;
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.323);
+    transform:translateY(-50%);
+    transition: 0.3s linear;
+    transition-property: background;
+    }
+    section#content > a:hover{
+        color: white;
+        background-color: #00000085;
+    }
+</style>
+<a class="prev" onclick="plusSlides(-1)" style="left: 0;
+top: 50%;">❮</a>
+<a class="next" onclick="plusSlides(1)" style="right: 0;
+top: 50%;">❯</a>
+<!-- box ledre  -->
+<div class="box">
+    
+    <div class="food-content" style="flex: 3;">
+        <h2>
+            Ledre
+        </h2>
+        <p>
+            Ledre is the one of Bojonegoro's traditional food or snack.
+            People usually buy Ledre as a gift. This snack are made by
+            flour, sugar, and banana. It is easy to find in Bojonegoro's
+            local souvenir center. Ledre taste sweet and savory.
+        </p>
+    </div>
+    <div class="food-profile" style="flex: 2;">
+        <img src="https://cdn1-production-images-kly.akamaized.net/fRQb0I36T8lHXNnjAX4cu6gQwj4=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2946049/original/068169100_1571727806-2._ledre.JPG" alt="">
+        
+    </div>
+</div>
+<!-- box untuk putu -->
+<div class="box" >
+    <div class="food-profile" style="flex: 2;">
+        <img src="https://cdn0-production-images-kly.akamaized.net/mlriGUIYNWB2uRlKGHg8j4pPnzc=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2702411/original/013596600_1547267317-shutterstock_1075482359.jpg" alt="">
+        
+    </div>
+    <div class="food-content" style="flex: 3;">
+        <h2>
+            Putu
+        </h2>
+        <p>
+            Ledre is the one of Bojonegoro's traditional food or snack.
+            People usually buy Ledre as a gift. This snack are made by
+            flour, sugar, and banana. It is easy to find in Bojonegoro's
+            local souvenir center. Ledre taste sweet and savory.
+        </p>
+    </div>
+</div>
+    
+
+</section>
+    <!-- tempatnya footer  -->
+    <!-- <section class="footer"> -->
+        <style>
+            footer{
+                background-color: rgba(0, 0, 0, 0.918);
+                padding: 0.4rem;
+                color: #616161;
+            }
+        </style>
+        <footer>
+            <p>
+                this sites originally created by Achmad Nashruddin Riskynanda for Web Programming Quiz
+            </p>
+        </footer>
+    <!-- </section> -->
+</div>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("box");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "flex";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist</title>
+    <link rel="stylesheet" href="../css/homeStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+<div class="outer-wrap">
+<div class="inner-wrap">
+    <section class="header">
+        <img src="https://awsimages.detik.net.id/community/media/visual/2022/03/15/kenapa-logo-halal-diganti-ada-perpindahan-wewenang-dari-mui-ke-kemenag.jpeg?w=1200" alt="">
+        <h3>Rudy's Page</h3>
+        <div class="nav-menus">
+            <ul>
+                <li><a href="../index.html#content">
+                    home</a>
+                </li>
+                <li><a href="../profile#content">
+                    profile</a>
+                </li>
+                <li><a href="../hometown#content">
+                    hometown</a>
+                </li>
+                <li><a href="../food#content">
+                    food</a>
+                </li>
+                <li><a href="../tourist#content">
+                    tourist</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- tempatnya konten  -->
+<section class="content" id="content">
+
+<style>
+    @keyframes horizon{
+        from{
+            width: 2%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    @keyframes fade{
+        0%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1.0;
+        }
+    }
+    section.content{
+    background-color: #3f3f3f;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: red; */
+}
+    section#content .background-filter{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #5e5a5a43;
+    }
+    section#content .box{
+    width: 100%;
+    height: 100vh;
+    padding: 15vh 20% 15vh 20%;
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    animation: fade 1s linear forwards;
+    }
+    section#content .box h2{
+        font-size: 3rem;
+        text-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
+        animation: fade 1.6s linear forwards;
+    }
+    section#content .box p{
+        text-align: justify;
+        text-shadow: 0 0.5rem 2rem rgb(0, 0, 0);
+        animation: fade 1.6s linear forwards;
+    }
+    
+    section#content .box hr{
+        width: 20%;
+        animation: horizon 1.6s linear forwards;
+    }
+</style>
+<!-- start div foodbox -->
+<!-- <div class="foodbox" style="width: 100% ;height: 100%"> -->
+<div class="background-filter">
+
+</div>
+<style>
+    section#content > a{
+    z-index: 999;
+    position: absolute;
+    padding: 2rem;
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.323);
+    transition: 0.3s linear;
+    transform:translateY(-50%);
+    transition-property: background;
+    }
+    section#content > a:hover{
+        color: white;
+        background-color: #00000085;
+    }
+</style>
+<a class="prev" onclick="plusSlides(-1)" style="left: 0;
+top: 50%;">❮</a>
+<a class="next" onclick="plusSlides(1)" style="right: 0;
+top: 50%;">❯</a>
+<!-- box ledre  -->    
+<div class="box" style="background-image: url(https://ik.imagekit.io/tvlk/blog/2021/11/Destinasi-Wisata-Bojonegoro-Air-Terjun-Kedung-Maor-Shutterstock.jpg?tr=dpr-2,w-675);">
+    <h2>Kedung Maor Waterfall</h2>
+    <hr>
+    <br>
+    <p>
+        Lokasi: Clebung, Bubulan, Area Hutan, Clebung, Bojonegoro, Kabupaten Bojonegoro, Jawa Timur 62172
+        <br>
+        <br>
+        Salah satu tempat wisata alam di Bojonegoro yang tersembunyi dan menarik untuk dikunjungi adalah
+        Air Terjun Kedung Maor. Wisata ini sangat cocok untuk kamu nikmati di libur akhir pekan, spot
+        anti-mainstream nan damai yang akan membuat kamu merasa refreshed dari rasa penat dari suasana
+        perkotaan yang bising dengan lalu lalang kendaraan.
+    </p>
+</div>
+<div class="box" style="background-image: url(https://www.goodnewsfromindonesia.id/uploads/post/large-goodnewsfromindonesia-gnfi-kayangan-api-bojonegoro-c4b4272a40d1d7a943469729b562ca43.jpg);">
+    <h2>Kahyangan Api</h2>
+    <hr>
+    <br>
+</div>
+<div class="box" style="background-image: url(https://ik.imagekit.io/tvlk/blog/2021/11/Destinasi-Wisata-Madiun-Teksas-Wonocolo-Shutterstock.jpg?tr=dpr-2,w-675);">
+    <h2>Wonocolo Texas</h2>
+    <hr>
+    <br>
+    <p>
+        Lokasi: Wonocolo, Kedewan, Kabupaten Bojonegoro, Jawa Timur 62164
+        <br>
+        <br>
+        Teksas merupakan singkatan dari Tekad Selalu Aman dan Sejahtera. Tempat wisata Bojonegoro ini
+        menjadi media edukasi yang cukup bermanfaat karena memberi wawasan tentang pengeboran minyak dengan
+        cara tradisional. Mirip dengan Texas yang ada di Amerika, tempat ini memiliki 250 sumur bor minyak
+        bumi yang sudah tidak aktif.
+    </p>
+</div>
+</section>
+    <!-- tempatnya footer  -->
+    <!-- <section class="footer"> -->
+        <style>
+            footer{
+                background-color: rgba(0, 0, 0, 0.918);
+                padding: 0.4rem;
+                color: #616161;
+            }
+        </style>
+        <footer>
+            <p>
+                this sites originally created by Achmad Nashruddin Riskynanda for Web Programming Quiz
+            </p>
+        </footer>
+    <!-- </section> -->
+</div>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("box");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+
+      if (n < 1) {slideIndex = slides.length}
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "flex";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+</body>
+</html>

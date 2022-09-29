@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/homeStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+<div class="outer-wrap">
+<div class="inner-wrap">
+    <section class="header" style="background-color: white;">
+        <img src="https://awsimages.detik.net.id/community/media/visual/2022/03/15/kenapa-logo-halal-diganti-ada-perpindahan-wewenang-dari-mui-ke-kemenag.jpeg?w=1200" alt="">
+        <h3>Rudy's Page</h3>
+        <div class="nav-menus">
+            <ul>
+                <li><a href="./index.html#content">
+                    home</a>
+                </li>
+                <li><a href="./profile#content">
+                    profile</a>
+                </li>
+                <li><a href="./hometown#content">
+                    hometown</a>
+                </li>
+                <li><a href="./food#content">
+                    food</a>
+                </li>
+                <li><a href="./tourist#content">
+                    tourist</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- tempatnya konten  -->
+<section style="padding: 0 5% 0 5%;"class="content" id="content">
+<style>
+    section.content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 2px solid blue; */
+    
+}
+        /* start with left content  */
+    section.content > .box-left{
+        /* width: 50%; */
+        flex: 3;
+        height: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+    .box-left>.bl-top{
+        position: relative;
+        padding: 4rem 2rem 1rem 2rem;
+            /* border: 2px solid red; */
+        
+    }
+    
+    
+    section.content > .box-right{
+        /* width: 50%; */
+        flex: 2;
+        height: 100%;
+        padding: 4rem 0 4rem 0;
+        
+        /* background-color: purple; */
+    }
+    section.content > .box-right img{
+        height:100%;
+        width: 100%;
+        
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: 50% 0;
+        /* border: 3px solid black; */
+        /* overflow-y: hidden; */
+        
+    }
+
+    /* kiri */
+        .bl-top > h1{
+            padding: 1rem;
+            font-size: 4rem;
+            font-weight: 600;
+            /* border: 2px solid green; */
+        }
+    
+        .bl-top > h2{
+            padding: 1.5rem;
+        }
+        .bl-top > a > h3{
+            margin-left: 1rem;
+            color: white;
+            width: fit-content;
+            padding: 1rem;
+            border-radius: 2rem;
+            /* margin-top: 5rem; */
+            background-color: rgb(0, 159, 233);
+        }
+        .bl-top > a > h3:hover{
+            background-color: rgb(0, 87, 128);
+        }
+
+        .bl-bot {
+            width: 100%;
+            height: 100%;
+            /* background-color: rgb(117, 117, 117); */
+            padding-top: 2rem;
+            /* border: 2px solid green; */
+        }
+
+        .bl-bot > .media-icons{
+            width: 100%;
+            
+            padding: 1rem;
+            font-size: 2rem;
+            display: flex;
+            justify-content: space-around;
+            /* background-color: rgb(0, 159, 233); */
+            color: rgb(0, 159, 233);
+        }
+        .bl-bot > .media-icons i{
+            padding: 1rem;
+            background-color: black;
+            border-radius: 50%;
+            transition: 0.3s;
+            transition-property: transform;
+        }
+        .bl-bot > .media-icons i:hover{
+            transform: scale(1.15);
+        }
+</style>
+<div class="box-left">
+    <div class="bl-top">
+        
+        <h1>
+            HI, THERE! <br>
+            I AM RUDY
+        </h1>
+        <h2>I am new in Web Development</h2>
+        <a href="./profile#content"><h3 style="margin-top: 2rem;">more about me!</h3></a>
+    </div>
+
+        <div class="bl-bot">
+            <div class="media-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/achmadnr9" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+</div>
+<div class="box-right">
+        <img src="./resources/home1.jpg" alt="gambarku" width="1000px" height="1000px">
+</div>
+</section>
+    <!-- tempatnya footer  -->
+    <!-- <section class="footer"> -->
+        <footer>
+            <p>
+                this sites originally created by Achmad Nashruddin Riskynanda for Web Programming Quiz
+            </p>
+        </footer>
+    <!-- </section> -->
+</div>
+</div>
+</body>
+</html>
